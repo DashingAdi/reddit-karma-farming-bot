@@ -127,12 +127,12 @@ with open(DISALLOWED_SUBS_FILENAME, "r") as disallowed_subs_obj:
 
 def get_args():
   parser = argparse.ArgumentParser(description='The bot needs stuff')
-  parser.add_argument('-u','--username', default=os.environ.get('REDDIT_USERNAME'))
-  parser.add_argument('-p','--password', default=os.environ.get('REDDIT_PASSWORD'))
-  parser.add_argument('-c','--clientid', default=os.environ.get('REDDIT_CLIENT_ID'))
-  parser.add_argument('-s','--secret', default=os.environ.get('REDDIT_SECRET'))
-  parser.add_argument('-a','--useragent', default=os.environ.get('REDDIT_USER_AGENT'))
-  parser.add_argument('-l','--sublist', default=os.environ.get('REDDIT_SUBREDDITS'))
+  parser.add_argument('-u','--username', default=os.environ.get('No-Hat1243'))
+  parser.add_argument('-p','--password', default=os.environ.get('dashingadi'))
+  parser.add_argument('-c','--clientid', default=os.environ.get('iLtKGhpg-Ks8vw'))
+  parser.add_argument('-s','--secret', default=os.environ.get('rLGl4u6MEatdsYLPswJwcJOujno'))
+  parser.add_argument('-a','--useragent', default=os.environ.get('android:com.RedditBot69.myredditapp:v1.2.3 (by u/Cusrsed9YearOld)'))
+  parser.add_argument('-l','--sublist', default=os.environ.get('cursedcomments'))
   return  parser.parse_args()
 
 if get_args().sublist: # Prefer subreddit list from envars
